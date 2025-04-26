@@ -27,7 +27,7 @@ This is a Next.js admin panel application featuring a data table with filtering,
 ```bash
 git clone [https://github.com/clotz9/tanstackdatatable.git](https://github.com/clotz9/tanstackdatatable.git)
 
-cd nextjs-admin-panel
+cd tanstackdatatable
 
 2. Install dependencies:
 npm install
@@ -39,7 +39,7 @@ pnpm install
 bun install
 
 3. Set up environment variables:
-Create a `.env` file in the root directory and add the following variables:
+Create a `.env.local` file in the root directory and add the following variables:
 ```
 NEXT_PUBLIC_API_URL=http://localhost:3000
 ```
@@ -55,7 +55,7 @@ pnpm dev
 bun dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000/admin-panel](http://localhost:3000/admin-panel) with your browser to see the result.
 
 
 ## Directory Structure
@@ -69,25 +69,16 @@ data-table/
 │   │   │   ├── dark-mode-toggle/
 │   │   │   ├── layout/
 │   │   │   ├── main-content/
-│   │   │   ├── sidebar/
-│   │   │   ├── hooks/
-│   │   │   ├── types/
-│   │   │   ├── utils/
-│   │   │   └── page.tsx
+│   │   │   └── sidebar/
+│   │   ├── hooks/
+│   │   ├── types/
+│   │   ├── utils/
 │   │   └── api/
 │   │       └── users/
 │   └── page.tsx
 ├── components.json
 ├── components/
-│   ├── ui/
-│   ├── dark-mode-toggle/
-│   ├── layout/
-│   ├── main-content/
-│   ├── sidebar/
-│   ├── hooks/
-│   ├── types/
-│   ├── utils/
-│   └── page.tsx
+│   └── ui/
 ├── package.json
 ├── README.md
 └── tsconfig.json
