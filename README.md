@@ -21,43 +21,6 @@ This is a Next.js admin panel application featuring a data table with filtering,
 - Lucide React (icons)
 - React Shadcn UI Components
 
-## Getting Started
-
-1. Clone the repository:
-```bash
-git clone [https://github.com/clotz9/tanstackdatatable.git](https://github.com/clotz9/tanstackdatatable.git)
-
-cd tanstackdatatable
-
-2. Install dependencies:
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-
-3. Set up environment variables:
-Create a `.env.local` file in the root directory and add the following variables:
-```
-NEXT_PUBLIC_API_URL=http://localhost:3000
-```
-
-4. Run the development server:
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-5. Open [http://localhost:3000/admin-panel](http://localhost:3000/admin-panel) with your browser to see the result.
-
-
 ## Directory Structure
 
 ```
@@ -83,3 +46,47 @@ data-table/
 ├── README.md
 └── tsconfig.json
 ```
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone [https://github.com/clotz9/tanstackdatatable.git](https://github.com/clotz9/tanstackdatatable.git)
+
+cd tanstackdatatable
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Set up environment variables:
+
+```bash
+Create a `.env.local` file in the root directory and add the following variables:
+
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
+
+4. Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+5. Open [http://localhost:3000/admin-panel](http://localhost:3000/admin-panel) with your browser to see the result.
