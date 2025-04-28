@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { User } from "./components/data-table/columns";
 import { filterRoles, filterStatus } from "./utils/data";
 
@@ -9,7 +11,8 @@ import { ThemeProvider } from "./components/dark-mode-toggle";
 async function getData(): Promise<User[]> {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
   const res = await fetch(`${apiUrl}/admin-panel/api/users`, {
-    next: { revalidate: 60 },
+    // next: { revalidate: 60 },
+    cache: "no-store",
   });
 
   // handle errors if api call fails

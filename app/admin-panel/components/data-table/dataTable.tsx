@@ -44,7 +44,7 @@ export function DataTableComponent<TData extends User, TValue>({
         user.email.toLowerCase().includes(search.toLowerCase());
       return matchesRole && matchesStatus && matchesSearch;
     });
-  }, [search, selectedRole, selectedStatus]);
+  }, [data, search, selectedRole, selectedStatus]);
 
   const table = useReactTable({
     data: filteredData,
